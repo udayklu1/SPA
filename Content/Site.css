@@ -1,0 +1,86 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: wheat;
+     font-variant:small-caps;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+#ListofUsers {
+    margin-top: 15px;
+}
+
+.home .header .btn-login, .home .header .btn-logout {
+    font-size: 14px;
+    display: inline-block;
+    border: 1px solid #1a1a1a;
+    border-radius: 3px;
+    padding: 5px 18px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #1a1a1a;
+}
+
+#remember, #btnRegister {
+    float: left;
+    margin: 0 10px 0px 0px;
+}
+
+.ajax-loader {
+    position: static;
+    left: 50%;
+    top: 50%;
+    margin-left: 72px;
+    margin-top: -14px;
+    display: block;
+}
+
+.bg {
+    background-image: url('../Images/salad-2068220_960_720.jpg');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+        opacity: 0.60;
+        text-align: center!important;
+        width: 36%;
+        color: floralwhite;
+}
+
+.welcome{
+        text-align: center!important;
+        width: 36%;
+        color: beige;
+}
+form{
+        padding-left: 40px;
+}
+#logo{
+    width: 27px;
+    margin-top: -4px;
+}
+.navbar-brand small {
+  display:block;
+  font-size:12px;
+}

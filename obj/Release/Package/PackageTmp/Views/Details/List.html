@@ -1,0 +1,39 @@
+﻿<h1>{{Title}}</h1>
+<a class="btn btn-primary" href="#/PD/Create" title="Create new record">Add New User</a>
+<table id="ListofUsers" class="table table-condensed table-responsive">
+    <tr>
+        <th ng-click="sort('UserId');">
+            UserId
+            <span class="glyphicon" ng-show="sortKey == 'UserId'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('UserName');">
+            UserName
+            <span class="glyphicon" ng-show="sortKey == 'UserName'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('UserPassword');">
+            Password
+            <span class="glyphicon" ng-show="sortKey == 'UserPassword'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('FirstName');">
+            FirstName
+            <span class="glyphicon" ng-show="sortKey == 'FirstName'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th ng-click="sort('LastName');">
+            LastName
+            <span class="glyphicon" ng-show="sortKey == 'LastName'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+        </th>
+        <th></th>
+    </tr>
+    <tr ng-repeat="user in UserDetails|orderBy:sortKey:reverse">
+        <td>{{user.UserID}}</td>
+        <td>{{user.UserName}}</td>
+        <td>{{user.UserPassword}}</td>
+        <td>{{user.FirstName}}</td>
+        <td>{{user.LastName}}</td>
+        <td>
+            <a class="btn btn-info" href="#/PD/Edit/{{user.UserID}}" title="Edit">Edit</a>
+            <input type="submit" class="btn btn-danger" ng-click="Delete(this);" value="Delete" title="Delete record" />
+        </td>
+    </tr>
+   
+</table> 
