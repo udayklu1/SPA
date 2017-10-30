@@ -84,3 +84,9 @@ form{
   display:block;
   font-size:12px;
 }
+.loading{
+    width: 116px;
+    height: 84px;
+    margin: -33px 0 8px 257px;
+    padding: 0;
+}
